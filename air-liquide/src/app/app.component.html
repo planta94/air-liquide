@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Interview Assessment</h1>
+    <h2>Question 1</h2>
+    <div class="container-row">
+      <input
+        type="text"
+        placeholder="Enter Any String"
+        (change)="updateInputValue($event)"
+        class="form"
+      />
+      <div class="h-spacer"></div>
+      <button class="button" (click)="reverseString()">Reverse</button>
+    </div>
+    <p class="output">{{ this.reversed }}</p>
+    <h2>Question 2</h2>
+    <div class="container-row">
+      <input
+        type="text"
+        placeholder="Enter Any String"
+        (change)="updateInputValue($event)"
+        class="form"
+      />
+      <div class="h-spacer"></div>
+      <button class="button" (click)="countVowels()">Count</button>
+    </div>
+    <p class="output">{{ this.vowel }}</p>
+    <h2>Question 3</h2>
+    <div class="container-row">
+      <input
+        type="text"
+        placeholder="Enter a Valid Integer"
+        (change)="updateInputValue($event)"
+        class="form"
+      />
+      <div class="h-spacer"></div>
+      <button class="button" (click)="fizzBuzz()">FizzBuzz</button>
+    </div>
+    <p class="output">{{ this.fizzbuzz }}</p>
+  </body>
+</html>
